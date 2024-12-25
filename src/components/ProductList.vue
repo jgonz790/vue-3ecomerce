@@ -1,7 +1,7 @@
 <script lang="ts">
 import ProductCard from './ProductCard.vue'
 import Cart from './Cart.vue'
-import type { CartDetail } from './types';
+import type { CartDetail } from '../model/types';
 
 export default {
   components: {
@@ -34,7 +34,21 @@ export default {
 }
 </script>
 
+
+
 <template>
-  <ProductCard v-for="product in products" :key="product.name" :product="product" @addProduct="onProductAdded" />
-  <Cart :details="details" />
+
+  <v-row>
+
+<v-col v-for="product in products" :key="product.name" cols="4">
+  <ProductCard  :product="product" @addProduct="onProductAdded" />
+<Cart :details="details" />
+
+</v-col>
+
+</v-row>
+
+
+
+
 </template>

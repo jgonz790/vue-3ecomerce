@@ -1,15 +1,14 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <v-card-title>
+      Acerca de esta tienda
+    </v-card-title>
+    <v-card-text>
+      <p>Esta tienda que te permite comprar muñecos de peluche de alta calida y al mejor precio.</p>
+      <p>Solicita informacion osvaldo.unet@gmail.com</p>
+      <p>Te espero</p>
+    </v-card-text>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+

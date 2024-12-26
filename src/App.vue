@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script  lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 
 </script>
@@ -12,11 +12,6 @@ import { RouterLink, RouterView } from 'vue-router'
           color="grey-darken-1"
           size="32"
         ></v-avatar>
-
-
-
-
-
 
 
         <RouterLink to="/" custom v-slot="{navigate}">
@@ -55,7 +50,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
     <v-main class="bg-grey-lighten-1">
       <v-container>
-        <RouterView />
+        <RouterView :details="details" />
       </v-container>
 
     </v-main>

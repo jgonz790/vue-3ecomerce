@@ -13,6 +13,9 @@ export default {
     const products = [
       { name: 'Silla', price: 45, id: 5 },
       { name: 'Mesa', price: 450, id: 6 },
+      { name: 'Escritorio', price: 500, id: 7 },
+      { name: 'Silla', price: 45, id: 5 },
+      { name: 'Mesa', price: 450, id: 6 },
       { name: 'Escritorio', price: 500, id: 7 }
     ];
 
@@ -36,6 +39,6 @@ export default {
         <ProductCard :product="product" @addProduct="onProductAdded" />
       </v-col>
     </v-row>
-    <Cart />
+
   </v-container>
 </template>

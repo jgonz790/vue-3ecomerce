@@ -23,7 +23,14 @@ export default {
       <v-card>
         <v-card-text>
           <v-list-item-title v-for="detail in details" :key="detail.productId" :value="detail.productId">
-            {{ detail.productId }} (Qty: {{ detail.quantity }})
+            {{ detail.productId }}
+            (Qty: {{ detail.quantity }})
+            <v-btn>
+              +
+            </v-btn>
+            <v-btn>
+              -
+            </v-btn>
           </v-list-item-title>
         </v-card-text>
       </v-card>

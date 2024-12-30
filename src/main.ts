@@ -10,6 +10,9 @@ import * as directives from 'vuetify/directives';
 import { createPinia } from 'pinia';
 // Components
 import router from './router';
+// Icons
+import '@mdi/font/css/materialdesignicons.css'
+
 
 const vuetify = createVuetify({
   components,

@@ -41,18 +41,19 @@ methods: {
         <v-card-text>
           <v-list v-if="details.length > 0">
           <v-list-item-title v-for="detail in details" :key="detail.productId" :value="detail.productId">
-            {{ detail.productId }}
+           Producto:  {{ detail.productId }}
 
             <v-btn size="small" @click="decrementQuantity(detail.productId)">
               -
             </v-btn>
-            (Qty: {{ detail.quantity }})
+            Cantidad: {{ detail.quantity }}
             <v-btn size="small" @click="incrementQuantity(detail.productId)">
               +
             </v-btn>
-            <v-btn @click="deleteProduct(detail.productId)">
-              Eliminar
-            </v-btn>
+            <v-btn
+            icon="mdi-trash-can-outline"
+            size="small"
+            @click="deleteProduct(detail.productId)" />
           </v-list-item-title>
         </v-list>
         <p v-else>

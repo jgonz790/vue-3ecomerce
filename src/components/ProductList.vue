@@ -11,12 +11,12 @@ export default {
   setup() {
     const cartStore = useCartStore();
     const products = [
-      { name: 'Silla', price: 45, id: 5 },
-      { name: 'Mesa', price: 450, id: 6 },
-      { name: 'Escritorio', price: 500, id: 7 },
-      { name: 'Silla', price: 45, id: 5 },
-      { name: 'Mesa', price: 450, id: 6 },
-      { name: 'Escritorio', price: 500, id: 7 }
+      { name: 'Silla', price: 45, id: 5 ,image:'https://picsum.photos/200/300'},
+      { name: 'Mesa', price: 450, id: 6 , image:'https://picsum.photos/200/300?grayscale'},
+      { name: 'Escritorio', price: 500, id: 7,image:'https://picsum.photos/id/870/200/300?grayscale&blur=2' },
+      { name: 'Parlante', price: 45, id: 5 },
+      { name: 'Audifonos', price: 450, id: 6 },
+      { name: 'Mause', price: 500, id: 7 }
     ];
 
     const onProductAdded = (productId: number) => {
